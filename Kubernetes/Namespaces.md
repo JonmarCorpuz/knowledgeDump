@@ -2,6 +2,8 @@
 
 [Namespaces](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/) is a naming mechanism that provides groups of resources within the same single physical cluster to be logically isolated from one another
 
+![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/More%20Assets/Screenshot%202025-01-22%20224739.png)
+
 * Provides cluster resources to be divided between multiple tenants and environments
 * Helps organizations organize workloads within a large Kubernetes cluster
 * Names of resources need to be unique within a namespace, but not across namespaces
