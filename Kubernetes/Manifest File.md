@@ -69,15 +69,15 @@ The `spec` section defines the desired state of the resource
 | image | The Docker image to use for the container |
 | ports | The list of ports to expose from the container |
 | env | The environment variables to set in the container |
-| resource requests | The amount of resources (*CPU*, *Memory*) that Kubernetes will guarantee to the container |
-| resource limits | The maximum amount of resources (*CPU*, *Memory*) that the container can use |
-| volumeMounts name | A reference to the volume name |
-| volumeMounts mountPath | The path within the container at which the volume should be mounted |
-| volumes name | The name of the volume reference in the volumeMounts |
-| volumes emptyDir | Specifies that the volume is a temporary directory that shares the pod's lifetime |
-| volumes configMap | |
-| volumes persistentVolumeClaim | |
-| volumes secret | |
+| resource - requests | The amount of resources (*CPU*, *Memory*) that Kubernetes will guarantee to the container |
+| resource - limits | The maximum amount of resources (*CPU*, *Memory*) that the container can use |
+| volumeMounts - name | A reference to the volume name |
+| volumeMounts - mountPath | The path within the container at which the volume should be mounted |
+| volumes - name | The name of the volume reference in the volumeMounts |
+| volumes - emptyDir | Specifies that the volume is a temporary directory that shares the pod's lifetime |
+| volumes - configMap | |
+| volumes - persistentVolumeClaim | |
+| volumes - secret | |
 
 ```YAML
 # Container specification template
@@ -100,6 +100,15 @@ spec:
       volumeMounts:
         - name: VOLUME_NAME
           mountPath: MOUNT_PATH
+      readinessProbe:
+        httpGet:
+          path: PATH
+          port: PORT_NUMBER
+        initialDelaySeconds: DELAY_SECONDS
+        periodSeconds: PERIOD_SECONDS
+        timeoutSeconds: TIMEOUT_SECONDS
+        successThreshold: SUCCESS_THRESHOLD
+        failureThreshold: FAILURE_THRESHOLD
   volumes:
     - name: VOLUME_NAME
       emptyDir: {}
