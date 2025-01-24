@@ -48,6 +48,8 @@ Externally exposes the service using the value mapped to the value of the extern
 
 * An instable cluster that's running with alpha features enabled for testing purposes
 
+## Windows Cluster
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Kubernetes Engine Cluster Visibility
@@ -65,6 +67,8 @@ Externally exposes the service using the value mapped to the value of the extern
 
 ## Standard Cluster 
 
+
+
 * Users are responsible for configuring and managing the Nodes
 * Follows a pay-per-node model where the customer is charged for the provisioned resources used when their application is running
 
@@ -73,23 +77,6 @@ Externally exposes the service using the value mapped to the value of the extern
 * Provides a hands-off experience (*GKE will configure and manage the cluster infrastructure*, *GKE will manage VPC-native traffic routing for public and private clusters*, *GKE will use Shielded GKE Nodes*, *GKE manages the nodes, meaning that there are no node pools for you to manage*, *etc.*)
 * Reduces your operational costs in running Kubernetes clusters by following a pay-per-pod model
 * Uses preconfigured and optimized cluster configurations
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-# Kubernetes Engine Policies
-
-## Autoscaling
-
-* Helps maintain performance by ensuring that there's sufficient Nodes to meet demand
-* Helps optimize the cost of your cluster by not running too many servers when not needed
-
-## Autohealing
-
-## Automatic Upgrades
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-# Maintenance Window
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
