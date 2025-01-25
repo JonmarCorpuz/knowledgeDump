@@ -1,4 +1,4 @@
-# Manifest Files
+# Manifest Files Overview
 
 A Kubernetes [manifest file](https://www.loft.sh/blog/kubernetes-manifest#:~:text=Kubernetes%20manifests%20are%20YAML%20or%20JSON%20files%20that%20define%20the%20desired%20state%20of%20objects%20in%20a%20cluster) is a YAML or JSON file that defines the desired state of K8 objects in a cluster
 
