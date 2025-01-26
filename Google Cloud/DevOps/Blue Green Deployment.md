@@ -11,7 +11,8 @@ The blue/green deployment is a deployment strategy used to reduce downtime and r
 
 * The traffic switch is typically done using load balancers or routing mechanisms
 * The traffic switch can happen instantly or gradually
-* After the traffic switch, the Green environment becomes the new Blue environment, while the old Blue environment becomes idle and can be used as a backup in case you need to rollback 
+* After the traffic switch, the Green environment becomes the new Blue environment, while the old Blue environment becomes idle and can be used as a backup in case you need to rollback
+* The primary downside is the need for double resources since both environments run concurrently
 
 ![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
 
