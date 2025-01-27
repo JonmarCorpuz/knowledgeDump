@@ -1,5 +1,21 @@
 # Metrics Overview
 
+Metrics are quantifiable measures used to track and assess the status or performance of specific assets of a system, process, or organization
+
+* Essential for making informed decisions, identifying trends, measuring success, and driving improvements
+
+![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
+
+# Metric Components
+
+## Namespace 
+
+A prefix that categorizes the metric by the service or application it pertains to (Ex: *compute.googleapis.com*) 
+
+## Name 
+
+The specific name of the metric after the namespace that indicates what the metric is measuring (Ex: *NAMESPACE/instance/cpu/utilization*) 
+
 ![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
 
 # Metric Types
@@ -9,13 +25,17 @@ The metric type is a specific identifier that represents what a metric measures 
 * Used to define the format and intended usage of metric data within a monitoring system
 * Describes the data that each metric will record and how it should be interpreted
 
-## Namespace 
+## Performance Metrics
 
-A prefix that categorizes the metric by the service or application it pertains to (Ex: *compute.googleapis.com*) 
+## Financial Metrics
 
-## Name 
+## Health Metrics
 
-The specific name of the metric after the namespace that indicates what the metric is measuring (Ex: *NAMESPACE/instance/cpu/utilization*) 
+## Environmental Metrics
+
+## Quality Metrics
+
+## Operational Metrics
 
 ![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
 
