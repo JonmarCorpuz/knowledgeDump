@@ -16,6 +16,8 @@ An IAM policy controls who can do what on which cloud resources by defining perm
 
 An organizational policy helps govern an organization's cloud resources across the board and helps ensure compliance with regulations or internal rules (Ex: *Set policies that restrict which Google Cloud services can be used within the organization*, *Only allow using data storage services in specific geographical locations*, *etc.*)
 
+* You can set an organizational policy to "off" in a specific project in order to allow a certain functionality to a specific project while maintaining broader organization security policies
+
 ![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
 
 # Resource Policies
