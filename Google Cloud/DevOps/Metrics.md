@@ -65,7 +65,7 @@ The metric kind refers to the classification of a metric based on how its data s
 
 A metric scope refers to the extent or boundary within which a particular set of metrics is relevant or is being measured
 
-* Helps categorize and segregate data collection and monitoring effors to specific components, environments, or objectives within a larger system
+* Helps categorize and segregate data collection and monitoring efforts to specific components, environments, or objectives within a larger system
 
 ![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
 
