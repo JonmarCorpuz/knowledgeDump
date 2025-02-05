@@ -20,6 +20,16 @@ An SLI is a metric used to quantitatively measure the performance of a service
 * Serves as a key element in managing and understanding the quality of services provided
 * Focuses on specific aspects of the service that are important to the users and the business (*Response time*, *Availability*, *Error rate*, *Throughput*, *etc.*)
 
+### Service Level Indicator Specification
+
+An SLI specification is the assessment of service outcome that you think matters to users, independent of how it's measured (Ex: *Ratio of home page requests that loaded in under 100 milliseconds*)
+
+* A single SLI specification may have multiple SLI implementations each with its own set of pros and cons in terms of quality, covergae, and cost
+
+### Service Level Indicator Implementation
+
+An SLI implementation is a way to measure an SLI (Ex: *Ratio of home page requests that loaded in under 100 milliseconds, as measured from the Latency column of the server log*)
+
 ![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
 
 # Error Budget
