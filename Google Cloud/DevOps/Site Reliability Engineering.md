@@ -2,7 +2,16 @@
 
 ![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
 
-# Site Reliability Engineering Principles
+# Fail Sanely
 
-* Manage risk based on error budgets (When the error budget is depleted, it's prudent to halt new feature releases to stabilize the system)
-* The decision to go forwards with a launch should be made considering the potential impact on the user experience and the system's current state
+![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
+
+# Progressive Rollouts
+
+![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
+
+# Error Budgets
+
+![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
+
+# Postmortems
