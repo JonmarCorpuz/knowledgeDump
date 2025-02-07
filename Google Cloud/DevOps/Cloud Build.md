@@ -9,3 +9,14 @@ Cloud Build (Cloud Deploy) is a CI/CD platform that automates your software buil
 * Builds run in a virtual environment and are isolated from other cloud resources
 
 ![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
+
+# Assure Open Source Software 
+
+![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
+
+# Private Pools
+
+Private Pools allows users to run builds on worker machines that aren't shared with other Google Cloud customers
+
+* Valuable for organizations with specific security, compliance, or performance requirements
+* Provide a higher level of isolation as they operate within the customer's VPC (Ensures that the build environments are isolated from the public internet and other Google Cloud customers)
