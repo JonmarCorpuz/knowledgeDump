@@ -1,6 +1,6 @@
 # Build Context Overview
 
-The [build context](https://docs.docker.com/build/concepts/context/#what-is-a-build-context) is the set of files that your build can access
+A build context refers to the set of files and directories that are sent to the Docker daemon when building a Docker image using the `docker build` command
 
 * Built using a [Dockerfile](https://docs.docker.com/reference/dockerfile/#:~:text=A%20Dockerfile%20is%20a%20text,line%20to%20assemble%20an%20image.)
 
