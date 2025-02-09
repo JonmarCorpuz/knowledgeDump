@@ -2,7 +2,7 @@
 
 A build context refers to the set of files and directories that are sent to the Docker daemon when building a Docker image using the `docker build` command
 
-* Built using a [Dockerfile](https://docs.docker.com/reference/dockerfile/#:~:text=A%20Dockerfile%20is%20a%20text,line%20to%20assemble%20an%20image.)
+* Typically includes your Dockerfile and all the files and directories that are referenced in the Dockerfile (*Application source code*, *Configuration files*, *etc.*)
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
