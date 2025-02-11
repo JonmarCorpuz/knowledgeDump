@@ -54,9 +54,50 @@ globalPolicyEvaluationMode: ENABLE
 * `clusterAdmissionRules` allows for specifying admission rules that apply to specific clusters
 * `globalPolicyEvaluationMode` allows the policy to be enforced globally across all clusters if enabled
 
+## Default Admission Rule
+
+A default admission rule (`defaultAdmissionRule`) specifies the baseline policy for all container image deployments in a Kubernetes cluster (Unless overridden by more specific rules targeted at particular clusters or namespaces)
+
+* Serves as the fallback policy that applies when no other specific rules match a container image deployment attempt (Ensures that every deployment is checked against a set of predefined criteria unless explicitly configured otherwise)
+* Crucial for enforcing security and compliance across all Kubernetes deployments by default (Ensures that any deployment that doesn't meet specific criteria or is not covered by more targeted rules is either allowed, denied, or allowed with logging based on the policy's baseline requirements)
+
+### Evaluation Mode
+
+The evaluation mode (`evaluationMode`) defines how the policy evaluates an image before admissions
+
+* `ALWAYS_ALLOW` indicates that the images are always allowed without any checks
+* `ALWAYS_DENY` indicates that the images are always denied
+* `REQUIRE_ATTESTATION` indicates that the images must have specific attestations to be admitted
+* `SKIP` indicates that no Binary Authorization checks are applied
+
+### Enforcement Mode
+
+THe enforcement mode (`enforcementMode`) specifies how the policy is enforced if the requirements set by the evaluation mode are not met
+
+* `ENFORCED_BLOCK_AND_AUDIT` indicates that the deployment will be blocked and the attempt will be logged
+* `DRYRUN_AUDIT_LOG_ONLY` indicates that the deployment will be allowed but will be logged for auditing puposes (Useful for simulating what would happen if it were enforced)
+* `DRYRUN_ALLOW_LOG_ONLY` indicates that the action will be logged but doesn't enforce blocks (Useful for testing policy impact without affecting production)
+
+### Require Attestation 
+
+The require attestation (`RequireAttestationBy`) lists the attestors whose attestations are required for the deployment of an image under the REQUIRE_ATTESTATION mode
+
+```YAML
+defaultAdmissionRule:
+  requireAttestationsBy:
+    - projects/my-project-id/attestors/example-attestor
+```
+
 ## Whitelist Name Pattern
 
 A whitelist name pattern (`admissionWhitelistPatterns`) refers to a specified pattern or set of rules used to identify container images that are allowed to be deployed on your Kubernetes cluster without requiring attestation
 
 * Allows users to control which container images can run based on their registry path, repository name, or tag and digests
 * Helps ensure that only authorized images from certain registries and repositories or with specific tags are permitted to be deployed
+
+```YAML
+defaultAdmissionRule:
+  admissionWhitelistPatterns:
+    - namePattern: "VALUE"
+    - namePattern: "VALUE"
+```
