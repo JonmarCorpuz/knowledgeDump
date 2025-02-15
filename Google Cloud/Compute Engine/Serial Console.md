@@ -14,4 +14,4 @@ A serial console is an interface that allows you to interact with a computer or 
 
 Serial console logs are records of all data that passes through a VM's serial console
 
-* Contains outputs that
+* Can be viewed using the console or with the `gcloud compute instances get-serial-port-output VM_NAME --zone ZONE` command
