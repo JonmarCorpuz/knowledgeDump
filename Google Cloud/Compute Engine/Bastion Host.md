@@ -11,7 +11,16 @@ A bastion host is a specially configured VM that's used as a secure and controll
 
 # Use a Bastion Host
 
-1. Create a bastion host VM using the **gcloud compute instances create VM_NAME --zone=ZONE --machine-type=e2-micro --image-family=IMAGE_FAMILY --image-project=IMAGE_PROJECT --network-interface=subnet=SUBNET,address=""** command
-2. Connect to the bastion host using the **gcloud compute ssh BASTION_VM_NAME** command
-3. Connect to the main VM through its internal IP address from the bastion host using the **gcloud compute ssh VM_NAME --internal-ip** command
+1. Create a bastion host VM
+```Bash
+gcloud compute instances create VM_NAME --zone=ZONE --machine-type=e2-micro --image-family=IMAGE_FAMILY --image-project=IMAGE_PROJECT --network-interface=subnet=SUBNET,address=""
+```
+2. Connect to the bastion host
+```Bash
+gcloud compute ssh BASTION_VM_NAME
+```
+3. Connect to the main VM through its internal IP address from the bastion host
+```Bash
+gcloud compute ssh VM_NAME --internal-ip
+```
 
