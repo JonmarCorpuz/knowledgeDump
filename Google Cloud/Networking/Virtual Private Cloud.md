@@ -20,6 +20,3 @@ Custom mode VPC is a VPC mode that offers detailed control and flexibility over 
 
 ![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
 
-# Network Peering
-
-![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
