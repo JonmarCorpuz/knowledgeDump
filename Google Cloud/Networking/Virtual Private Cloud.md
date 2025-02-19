@@ -17,3 +17,9 @@ Auto mode VPC is a VPC mode that's designed for simplicity and ease of use
 ## Custom Mode
 
 Custom mode VPC is a VPC mode that offers detailed control and flexibility over your network configuration
+
+![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
+
+# Network Peering
+
+![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
