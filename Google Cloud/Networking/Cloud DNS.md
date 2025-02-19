@@ -13,3 +13,5 @@ Internal DNS refers to a managed service that provides DNS name resolution withi
 ![](https://github.com/JonmarCorpuz/LetsLearn/blob/main/Assets/Whitespace.png)
 
 # External DNS
+
+External DNS refers to a managed service that provides DNS name resolution between a Google Cloud network and the Internet
