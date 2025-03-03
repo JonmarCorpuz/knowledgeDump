@@ -1,5 +1,7 @@
 # ConfigMaps Overview
 
+A ConfigMap is a Kubernetes resource that's used to store non-confidential data in key-value pairs
+
 * Gives us a way to decouple and inject configuration data into Pods
 * Can be used to store non-sensitive data in key-value pairs and decouple this data from the Pod definitions and lifecycle (Meaning that if we delete a Pod, the ConfigMap will still exist and can be referenced in other places)
 * Can be referenced either as environmental variables or as files via volume mounts
