@@ -1,1 +1,0 @@
-# Blind IDOR Overview
