@@ -1,6 +1,6 @@
 # Block Storage Overview
 
-Block storage is used for boot and data volumes for all compute engine instances ^[1]^ (*VM instances*, *Containers*, *Bare metal instances*, *etc.*) .
+Block storage is used for boot and data volumes for all compute engine instances <sup>[1]</sup> (*VM instances*, *Containers*, *Bare metal instances*, *etc.*) .
 
 * Also known as disks or volumes
 
@@ -16,7 +16,7 @@ Block storage is used for boot and data volumes for all compute engine instances
 
 ## Temporary Block Storage
 
-Temporary block storage ^[2]^ is a disk that physically attached to the physical host
+Temporary block storage <sup>[2]</sup> is a disk that physically attached to the physical host
 
 * Data is lost if the VM is stopped, suspended, or restarted
 * Offers the fastest performance among all block storage types
@@ -29,7 +29,7 @@ Temporary block storage ^[2]^ is a disk that physically attached to the physical
 
 ## Durable Block Storage
 
-Durable block storage ^[3]^ is a disk that's network-attached to a VM instance
+Durable block storage <sup>[3]</sup> is a disk that's network-attached to a VM instance
 
 * Used for data that needs to be preserved after a VM turns on and off
 * Independent of the compute instances that they're attached to (You can attach and detach them)
@@ -43,15 +43,15 @@ Durable block storage ^[3]^ is a disk that's network-attached to a VM instance
 
 ## Local SSD
 
-Local Solid State Drive ^[4]^
+Local Solid State Drive <sup>[4]</sup>
 
 * Offers superior IOPS (Higher performance) and low latency compared to durable block storage solutions
-* Performance depends on several factors (*Number of attached Local SSD disks - More attached Local SSDs increases performance*, *The selected disk interface - NVMe ^[6]^ or SCSI ^[7]^*, *Instance machine type*, *etc.*)
+* Performance depends on several factors (*Number of attached Local SSD disks - More attached Local SSDs increases performance*, *The selected disk interface - NVMe <sup>[6]</sup> or SCSI <sup>[7]</sup>*, *Instance machine type*, *etc.*)
 
 | Local SSD Type | Description |
 | --- | --- |
-| Titanium SSD | Custom-designed local SSD that uses Titanium I/O offload processing ^[5]^ (Titanium SSD performance limits ^[8]^) |
-| Local SSD | The original local SSD feature (NVMe performance ^[9]^ and SCSI performance ^[10]^) |
+| Titanium SSD | Custom-designed local SSD that uses Titanium I/O offload processing <sup>[5]</sup> (Titanium SSD performance limits <sup>[8]</sup>) |
+| Local SSD | The original local SSD feature (NVMe performance <sup>[9]</sup> and SCSI performance <sup>[10]</sup>) |
 
 ## Hyperdisk
 
