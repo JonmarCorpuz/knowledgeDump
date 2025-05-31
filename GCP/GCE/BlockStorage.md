@@ -16,6 +16,8 @@ Block storage is used for boot and data volumes for all compute engine instances
 
 ## Temporary Block Storage
 
+Temporary block storage [2] is a disk that physically attached to the physical host
+
 * Data is lost if the VM is stopped, suspended, or restarted
 * Offers the fastest performance among all block storage types
 * Used for only scratch data (*Cache*, *etc.*)
@@ -23,12 +25,52 @@ Block storage is used for boot and data volumes for all compute engine instances
 
 | Temporary Block Storage Solution | Description |
 | --- | --- | 
-| Local SSD |
+| Local SSD | tmp |
 
 ## Durable Block Storage
 
+Durable block storage [3] is a disk that's network-attached to a VM instance
 
+* Used for data that needs to be preserved after a VM turns on and off
+* Independent of the compute instances that they're attached to (You can attach and detach them)
+
+
+| Durable Block Storage | Description |
+| --- | --- |
+| Hyperdisk | |
+| Persistent Disk | |
+
+# Disks
+
+## Local SSD
+
+Local Solid State Drive [4]
+
+* Offers superior IOPS (Higher performance) and low latency compared to durable block storage solutions
+* Performance depends on several factors (*Number of attached Local SSD disks - More attached Local SSDs increases performance*, *The selected disk interface - NVMe [6] or SCSI [7]*, *Instance machine type*, *etc.*)
+
+| Local SSD Type | Description |
+| --- | --- |
+| Titanium SSD | Custom-designed local SSD that uses Titanium I/O offload processing [5] (Titanium SSD performance limits [8]) |
+| Local SSD | The original local SSD feature (NVMe performance [9] and SCSI performance [10]) |
+
+## Hyperdisk
+
+* Data is encrypted at rest and in transit (You can customize the encryption with your own keys)
+
+## Persistent Disk
+
+* Data is encrypted at rest and in transit (You can customize the encryption with your own keys)
 
 # References
 
 [1] https://cloud.google.com/compute/docs/disks#:~:text=You%20can%20use%20block%20storage%20for%20boot%20and%20data%20volumes%20for%20all%20compute%20instances%2C%20including%20virtual%20machines%20(VMs)%2C%20containers%2C%20and%20bare%20metal%20instances 
+[2] https://cloud.google.com/compute/docs/disks#localssds
+[3] https://cloud.google.com/compute/docs/disks#temp-vs-durable
+[4] https://cloud.google.com/compute/docs/disks/local-ssd
+[5] https://cloud.google.com/titanium 
+[6] https://cloud.google.com/compute/docs/disks/local-ssd#:~:text=selected%20disk%20interface%20(-,NVMe,-or%20SCSI)%2C%20and
+[7] https://cloud.google.com/compute/docs/disks/local-ssd#:~:text=interface%20(NVMe%20or-,SCSI,-)%2C%20and%20the%20instance%27s 
+[8] https://cloud.google.com/compute/docs/disks/local-ssd#titanium-ssd-perf-nvme
+[9] https://cloud.google.com/compute/docs/disks/local-ssd#local-ssd-perf-nvme
+[10] https://cloud.google.com/compute/docs/disks/local-ssd#local-ssd-perf-scsi
