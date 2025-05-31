@@ -6,9 +6,9 @@ Block storage is used for boot and data volumes for all compute engine instances
 
 ## Table of Contents
 
-[Block Storage Types](www.google.com)
-|__ [Temporary Block Storage](www.google.com)
-|__ [Durable Block Storage](www.google.com)
+[Block Storage Types](www.google.com)<br>
+|__ [Temporary Block Storage](www.google.com)<br>
+|__ [Durable Block Storage](www.google.com)<br>
 
 [References](www.google.com)
 
@@ -64,13 +64,13 @@ Local Solid State Drive [4]
 
 # References
 
-[1] https://cloud.google.com/compute/docs/disks#:~:text=You%20can%20use%20block%20storage%20for%20boot%20and%20data%20volumes%20for%20all%20compute%20instances%2C%20including%20virtual%20machines%20(VMs)%2C%20containers%2C%20and%20bare%20metal%20instances 
-[2] https://cloud.google.com/compute/docs/disks#localssds
-[3] https://cloud.google.com/compute/docs/disks#temp-vs-durable
-[4] https://cloud.google.com/compute/docs/disks/local-ssd
-[5] https://cloud.google.com/titanium 
-[6] https://cloud.google.com/compute/docs/disks/local-ssd#:~:text=selected%20disk%20interface%20(-,NVMe,-or%20SCSI)%2C%20and
-[7] https://cloud.google.com/compute/docs/disks/local-ssd#:~:text=interface%20(NVMe%20or-,SCSI,-)%2C%20and%20the%20instance%27s 
-[8] https://cloud.google.com/compute/docs/disks/local-ssd#titanium-ssd-perf-nvme
-[9] https://cloud.google.com/compute/docs/disks/local-ssd#local-ssd-perf-nvme
-[10] https://cloud.google.com/compute/docs/disks/local-ssd#local-ssd-perf-scsi
+[1] https://cloud.google.com/compute/docs/disks#:~:text=You%20can%20use%20block%20storage%20for%20boot%20and%20data%20volumes%20for%20all%20compute%20instances%2C%20including%20virtual%20machines%20(VMs)%2C%20containers%2C%20and%20bare%20metal%20instances<br>
+[2] https://cloud.google.com/compute/docs/disks#localssds<br>
+[3] https://cloud.google.com/compute/docs/disks#temp-vs-durable<br>
+[4] https://cloud.google.com/compute/docs/disks/local-ssd<br>
+[5] https://cloud.google.com/titanium<br> 
+[6] https://cloud.google.com/compute/docs/disks/<br>local-ssd#:~:text=selected%20disk%20interface%20(-,NVMe,-or%20SCSI)%2C%20and
+[7] https://cloud.google.com/compute/docs/disks/local-ssd#:~:text=interface%20(NVMe%20or-,SCSI,-)%2C%20and%20the%20instance%27s<br> 
+[8] https://cloud.google.com/compute/docs/disks/local-ssd#titanium-ssd-perf-nvme<br>
+[9] https://cloud.google.com/compute/docs/disks/local-ssd#local-ssd-perf-nvme<br>
+[10] https://cloud.google.com/compute/docs/disks/local-ssd#local-ssd-perf-scsi<br>
