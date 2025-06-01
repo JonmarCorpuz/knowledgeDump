@@ -29,7 +29,7 @@ It’s a pyramid-shaped diagram that categorizes Indicators of Compromise based 
 | Artifact Type | Description |
 | --- | --- |
 | Host Artifact | Traces or observables that attackers leave on the system (*Registry values*, *Files*, *etc.*) |
-| Network Artifact |  |
+| Network Artifact | Indicators seen in network traffic that suggests an attack or malware communication (*User-Agent string*, *URI patterns*, *etc.*) |
 
 ## Domain Names
 <br>
