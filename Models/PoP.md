@@ -18,11 +18,7 @@ It’s a pyramid-shaped diagram that categorizes Indicators of Compromise based 
 
 ## Artifacts
 
-<br>
-
 ### Host Artifacts
-
-<br>
 
 ### Network Artifacts
 
