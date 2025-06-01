@@ -10,15 +10,27 @@ It’s a pyramid-shaped diagram that categorizes Indicators of Compromise based 
 
 ## TTPs
 
+<br>
+
 ## Tools
+
+<br>
 
 ## Artifacts
 
+<br>
+
 ### Host Artifacts
+
+<br>
 
 ### Network Artifacts
 
+<br>
+
 ## Domain Names
+
+<br>
 
 ## IP Addresses
 
