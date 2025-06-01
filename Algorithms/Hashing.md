@@ -7,3 +7,11 @@ A hashing algorithm is a function that takes input data (of any size) and transf
 * Collision-reistant
 
 # Hashing Algorithm
+
+## MD5
+
+## SHA
+
+### SHA-1
+
+### SHA-2
