@@ -4,6 +4,6 @@
 
 # Node Types
 
-## Master
+## Controller Node
 
 ## Agents
