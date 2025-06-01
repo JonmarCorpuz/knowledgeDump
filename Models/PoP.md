@@ -9,7 +9,7 @@ It’s a pyramid-shaped diagram that categorizes Indicators of Compromise based 
 ## TTPs
 <br>
 
-* Description: Behavioral patterns (How attackers operate)
+* Description: Behavioral patterns (How attackers operate and the steps they took)
 * Pain to attacker: Very High
 * Reasoning: TTPs reflect habits and workflows so changing these means reengineering the entire attack strategy, training operators, and testing new methods
 
