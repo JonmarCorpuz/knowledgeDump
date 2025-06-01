@@ -12,11 +12,7 @@ Block storage is used for boot and data volumes for all compute engine instances
 
 [References](www.google.com)<br>
 
-<br>
-
 # Block Storage Types
-
-<br>
 
 ## Temporary Block Storage
 
@@ -48,8 +44,6 @@ Durable block storage <sup>[3]</sup> is a disk that's network-attached to a VM i
 <br>
 
 # Disks
-
-<br>
 
 ## Local SSD
 
