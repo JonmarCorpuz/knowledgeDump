@@ -10,9 +10,13 @@ Block storage is used for boot and data volumes for all compute engine instances
 |__ [Temporary Block Storage](www.google.com)<br>
 |__ [Durable Block Storage](www.google.com)<br>
 
-[References](www.google.com)
+[References](www.google.com)<br>
+
+<br>
 
 # Block Storage Types
+
+<br>
 
 ## Temporary Block Storage
 
@@ -27,6 +31,8 @@ Temporary block storage <sup>[2]</sup> is a disk that physically attached to the
 | --- | --- | 
 | Local SSD | tmp |
 
+<br>
+
 ## Durable Block Storage
 
 Durable block storage <sup>[3]</sup> is a disk that's network-attached to a VM instance
@@ -39,7 +45,11 @@ Durable block storage <sup>[3]</sup> is a disk that's network-attached to a VM i
 | Hyperdisk | |
 | Persistent Disk | |
 
+<br>
+
 # Disks
+
+<br>
 
 ## Local SSD
 
@@ -53,13 +63,19 @@ Local Solid State Drive <sup>[4]</sup>
 | Titanium SSD | Custom-designed local SSD that uses Titanium I/O offload processing <sup>[5]</sup> (Titanium SSD performance limits <sup>[8]</sup>) |
 | Local SSD | The original local SSD feature (NVMe performance <sup>[9]</sup> and SCSI performance <sup>[10]</sup>) |
 
+<br>
+
 ## Hyperdisk
 
 * Data is encrypted at rest and in transit (You can customize the encryption with your own keys)
 
+<br>
+
 ## Persistent Disk
 
 * Data is encrypted at rest and in transit (You can customize the encryption with your own keys)
+
+<br>
 
 # References
 
