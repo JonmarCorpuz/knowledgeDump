@@ -38,7 +38,8 @@ pipeline {
         stage(){
             agent { }
             steps {
-                echo "test"
+                echo "test"ls
+                git add
             }
         }
     }
