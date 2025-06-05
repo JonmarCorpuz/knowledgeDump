@@ -22,6 +22,10 @@ Jenkins fingerprints are unique hashes that are used to track files (Typically b
 
 <br>
 
+# Parameters
+
+<br>
+
 # References
 
 [1] [Fingerprints](https://www.jenkins.io/doc/book/using/fingerprints/#fingerprints) <br>
