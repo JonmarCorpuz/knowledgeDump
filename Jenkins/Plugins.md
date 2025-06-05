@@ -19,7 +19,7 @@ Jenkins plugins are like extensions that supercharge Jenkins with functionalitie
 
 # Jenkins Plugins
 
-## Source Code Management
+## Open Blue Ocean
 
 <br>
 
