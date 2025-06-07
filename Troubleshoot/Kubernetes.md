@@ -1,0 +1,23 @@
+# Pods
+
+```Text
+Cannot schedule pods: Preemption is not helpful for scheduling.
+```
+
+<br>
+
+```Text
+Cannot schedule pods: Insufficient cpu.
+```
+
+<br>
+
+```Text
+Cannot schedule pods: No preemption victims found for incoming pod.
+```
+
+<br>
+
+```Text
+Cannot schedule pods: node(s) had volume node affinity conflict.
+```
