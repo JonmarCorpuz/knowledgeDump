@@ -41,6 +41,14 @@ A fingerprint is a short hashed version of the SSH server's public key
 
 <br>
 
+# SSH Tunnels
+
+* Forwards network traffic between nodes via an encrypted tunnel
+* Adds a layer of secrecy (*Allows you to hide your true IP address*, *Third parties won't be able to see the contents of the packets that are forwarded through the tunnel*, *etc.*)
+* Can be used to by-parse IP-based rate limiting tools (*Fail2Ban*, *etc.*)
+
+<br>
+
 # References
 
 [1] https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server#how-do-ssh-keys-work <br>
