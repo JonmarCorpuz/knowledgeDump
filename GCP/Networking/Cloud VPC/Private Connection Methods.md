@@ -12,6 +12,8 @@
 
 * Allows users to use Google APIs and services without the need for external IP addresses
 * Enabled on the subnet level (If this isn't enabled for a subnet then VMs with internal IP addresses can only send traffic within the VPC network)
+* You must create DNS records for **private.googleapis.com** or the **restricted.googleapis.com** domain names that you're using
+* A VM instance must be configured with  /96 IPv6 address range if it wants to connect to Google APIs and services
 
 <br>
 
