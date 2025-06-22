@@ -4,3 +4,7 @@
 * Designed to handle HTTP and HTTP(S) traffic
 
 <br>
+
+# Internal Application Load Balancer 
+
+* Connects to regional endpoints for Google APIs from workloads in the same region in order to enable data residency
