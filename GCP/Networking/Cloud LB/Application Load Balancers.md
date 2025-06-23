@@ -2,6 +2,8 @@
 
 * Works on the application layer (Layer 7)
 * Designed to handle HTTP and HTTP(S) traffic
+* Acts as reverse proxies
+* Distributes incoming traffic across multiple backend instances based on rules that you define
 
 <br>
 
