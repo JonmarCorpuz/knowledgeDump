@@ -31,4 +31,11 @@
 
 ## User-Defined Logs-Based Metrics
 
+* Includes any metrics not defined by Google Cloud
 * Applied either at the project or bucket level
+* Used to extract metrics that aren't captured by the built-in metrics
+* Created using either the Cloud Monitoring API or the OpenTelemetry protocol
+
+### OpenTelemetry
+
+### Cloud Monitoring API

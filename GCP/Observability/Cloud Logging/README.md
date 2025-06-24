@@ -15,4 +15,3 @@
 | Protect your audit logs storage by configuring CMEK |
 | Apply the principle of least privilege |
 | Configure log views |
-
