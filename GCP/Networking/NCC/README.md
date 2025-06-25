@@ -1,3 +1,4 @@
 # Network Connectivity Center Overview
 
-* A centralized hub to manaege GCP connections
+* Provides centralized network monitoring and visibility
+* Helps reduce troubleshooting time and effort

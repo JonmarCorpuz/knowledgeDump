@@ -1,8 +1,9 @@
 # Cloud NAT Overview
 
+* A fully-managed proxyless NAT service in Andromeda
 * Reduces the need for individual VMs to each have external IP addresses
 * Automatically scales the number of NAT IP addresses that it uses
-* Not dependent on a single physica gateway device
+* Not dependent on a single physical gateway device
 
 <br>
 
