@@ -1,4 +1,4 @@
-# OCI Overview
+# Open Container Initiative Overview
 
 <br>
 
@@ -6,7 +6,7 @@
 
 ## imagespec
 
-* The specifications on how an image should be built
+* Defines the specifications on how an image should be built
 
 ## runtimespec
 
