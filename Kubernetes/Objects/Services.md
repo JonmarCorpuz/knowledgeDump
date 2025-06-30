@@ -37,10 +37,44 @@ spec:
 # ClusterIP
 
 * The service creates a virtual IP inside the cluster to enable communication between different services
+* Groups multiple pods together to provide a single interface to access them (Helps easily and effectively deploy a microservices0based application on Kubernetes)
+
+<br>
+
+```YAML
+apiVersion: v1
+kind: Service
+metadata:
+  # METADATA
+spec:
+  type: ClusterIP
+  ports:
+  - targetPort: # PORT NUMBER of the pod
+    port: # PORT NUMBER of the service object
+  selector:
+    # LABELS in pod YAML definition from the metadata section
+```
 
 <br>
 
 # LoadBalancer
 
 * Provisions a load balancer for an application
-* Only provided in supported cloud providers
+* Only provided in supported cloud providers (If used in a unsupported environment then it'll just be applied as a NodePort)
+
+<br>
+
+```YAML
+apiVersion: v1
+kind: Service
+metadata:
+  # METADATA
+spec:
+  type: LoadBalancer
+  ports:
+  - targetPort: # PORT NUMBER of the pod
+    port: # PORT NUMBER of the service object
+    nodePort: #PORT NUMBER of the node
+  selector:
+    # LABELS in pod YAML definition from the metadata section
+```
