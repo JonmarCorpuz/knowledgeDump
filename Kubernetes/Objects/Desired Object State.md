@@ -1,10 +1,12 @@
-# Deployments Overview
+# Desired State Overview
+
+The desired state of an object in Kubernetes is the exact configuratio of the object that you define
 
 * K8 uses YAML files as inputs for the creation of K8 objects (*Pods*, *Replicas*, *Deployments*, *Services*, *etc.*)
 
 <br>
 
-# Deployment File Properties
+# YAML File Properties
 
 ```YAML
 apiVersion:
@@ -79,6 +81,8 @@ spec:
       containers:
         - name: # STRING
           image: # STRING
+          ports:
+            - containerPort: # INTEGER
 ```
 
 Replication Controller
