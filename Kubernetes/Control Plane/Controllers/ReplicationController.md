@@ -1,4 +1,4 @@
-# Replication Controller Overview
+# ReplicationController Overview
 
 * Provides high availability by helping run multile instances of a single pod in a K8 cluster
 * Ensures that the specified number of pods are running all the time (Automatically brings up a new pod when the existing one fails)
