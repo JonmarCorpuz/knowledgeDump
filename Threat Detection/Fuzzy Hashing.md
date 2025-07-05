@@ -5,12 +5,15 @@ Fuzzy hashing is a technique used to compare two pieces of data and determine ho
 * Tolerates small changes and still finds similarity
 
 <br>
-# Common Tools
+
+# Fuzzy Hashig Tools
 
 ## SSDeep
 
 <br>
+
 ## sdhash
 
 <br>
+
 ## TLSH
