@@ -38,8 +38,20 @@ apiVersion: # v1, apps/v1
 * Defined in the form of a dictionary
 
 ```YAML
-kind: # Pod, Service, ReplicaSet, Deployment, ReplicationController
+kind: # Pod, Service, ReplicaSet, Deployment, ReplicationController, Namespace, ResourceQuota
 ```
+
+<br>
+
+| Kind | Description |
+| --- | --- |
+| Pod | |
+| Service | |
+| ReplicaSet | |
+| ReplicationController | |
+| Deployment | |
+| Namespace | |
+| ResourceQuota | |
 
 <br>
 
