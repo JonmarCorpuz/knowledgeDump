@@ -55,7 +55,7 @@ kubectl rollout undo deployment/DEPLOYMENT_NAME
 <br>
 
 ```Bash
-kubectl get pods [--namespace=NAMESPACE]
+kubectl get pods [--namespace=NAMESPACE] [--selector LABEL=VALUE]
 ```
 
 <br>
@@ -63,4 +63,14 @@ kubectl get pods [--namespace=NAMESPACE]
 ```Bash
 # Set a namespace as the current context
 kubectl config set-context $(kubectl config current-context) --namespace=NAMESPACE 
+```
+
+<br>
+
+```Bash
+# Label a node
+kubectl label nodes NODE_NAME LABEL=VALUE
+
+# Taint a node
+kubectl taint nodes NODE_NAME KEY=VALUE:TAINT_EFFECT
 ```

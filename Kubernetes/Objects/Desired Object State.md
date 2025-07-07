@@ -111,4 +111,60 @@ spec:
     matchLabels: # STRING
 ```
 
+Toleration
+```YAML
+apiVersion:
+kind: Pod
+metadata:
+  name: POD_NAME
+spec
+  containers:
+  - name: CONTAINER_NAME
+    image: CONTAINER_IMAGE
+  
+  tolerations:
+  - key = "KEY"
+    operation = "Equal"
+    value = "VALUE"
+    effect = "TAINT_EFFECT"
+```
+
+Node Selectors
+```YAML
+apiVersion:
+kind: Pod
+metadata:
+  name: POD_NAME
+spec:
+  containrers:
+  - name: CONTAINER_NAME
+    image: CONTAINER_IMAGE
+
+  nodeSelector:
+    LABEL: VALUE 
+```
+
+Node Affinity
+```YAML
+apiVersion:
+kind: Pod
+metadata:
+  name: POD_NAME
+spec:
+  containrers:
+  - name: CONTAINER_NAME
+    image: CONTAINER_IMAGE
+
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoreDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: LABEL
+            operator: In
+            values:
+            - VALUE
+              VALUE
+```
+
 <br>
