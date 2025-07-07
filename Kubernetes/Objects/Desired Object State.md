@@ -167,4 +167,66 @@ spec:
               VALUE
 ```
 
+Limit Ranges
+```YAML
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: OBJECT_NAME
+spec:
+  limits:
+    # Default limit
+  - default:
+      cpu: 500m
+      memory: 1Gi
+    # Default request
+    defaultRequest:
+      cpu: 500m
+      memory: 1Gi      
+    # Maximum limit that can be set 
+    max:
+      cpu: "1"
+      memory: 1Gi
+    # Minimum limit that can be set
+    min:
+      cpu: 100m
+      memory: 1Gi
+    type: container
+```
+
+Resource Quotas
+```YAML
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: RESOURCE_NAME
+spec:
+  hard:
+    requests.cpu: 4
+    requests.memory: 4Gi
+    limits.cpu: 10
+    limits.memory: 10Gi
+```
+
+DaemonSet
+```YAML
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: RESOURCE_NAME
+spec:
+  selector:
+    matchLabels:
+      LABEL: VALUE
+  
+  template:
+    metadata:
+      labels:
+        LABEL: VALUE
+      spec:
+        containers:
+        - name: CONTAINER_NAME
+          image: CONTAINER_IMAGE
+```
+
 <br>

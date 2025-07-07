@@ -74,3 +74,13 @@ kubectl label nodes NODE_NAME LABEL=VALUE
 # Taint a node
 kubectl taint nodes NODE_NAME KEY=VALUE:TAINT_EFFECT
 ```
+
+<br>
+
+```Bash
+# View DaemonSets
+kubectl get daemonsets
+
+# Describe a DaemonSet
+kubectl describe daemonsets DAEMONSET_NAME
+```
