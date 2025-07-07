@@ -161,7 +161,7 @@ spec:
         nodeSelectorTerms:
         - matchExpressions:
           - key: LABEL
-            operator: In
+            operator: OPERATOR # In, NotIn, Exists, DoesNotExist
             values:
             - VALUE
               VALUE
