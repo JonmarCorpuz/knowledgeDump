@@ -52,6 +52,7 @@ kind: # Pod, Service, ReplicaSet, Deployment, ReplicationController, Namespace, 
 | Deployment | |
 | Namespace | |
 | ResourceQuota | |
+| ServiceAccount | |
 
 <br>
 
@@ -227,6 +228,45 @@ spec:
         containers:
         - name: CONTAINER_NAME
           image: CONTAINER_IMAGE
+```
+
+Schedulers
+```YAML
+apiVersion: kubescheduler.conf.k8s.io/v1
+kind: LubeSchedulerConfiguration
+profiles:
+- schedulerName: SCHEDULER_NAME
+```
+```YAML
+apiVersion: v1
+kind: Pod
+metadata:
+  name: RESOURCE_NAME
+  namespace: NAMESPACE
+spec:
+  containers:
+  - command:
+    - kuber-scheduler
+    - --address=127.0.0.1
+    - --kubeconfig=/etc/kubernetes/scheduler.conf
+    - --config=/etc/kubernetes/SCHEDULER_CONFIGURATION.yaml
+
+    image: k8s.gcr.io/kube-scheduler-amd64:v1.11.3
+    name: kube-scheduler
+```
+
+Deploy Pod Using Custom Scheduler
+```YAML
+apiVersion: v1
+kind: Pod
+metadata:
+  name: RESOURCE_NAME
+spec:
+  containers:
+  - image: CONTAINER_IMAGE
+    name: CONTAINER_NAME
+
+  schedulerName: SCHEDULER_NAME
 ```
 
 <br>

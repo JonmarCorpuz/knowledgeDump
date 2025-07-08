@@ -84,3 +84,17 @@ kubectl get daemonsets
 # Describe a DaemonSet
 kubectl describe daemonsets DAEMONSET_NAME
 ```
+
+<br>
+
+```Bash
+#
+kubectl get events -o wide
+```
+
+<br>
+
+```Bash
+# View scheduler logs
+kubectl logs SCHEDULER_NAME --name-space=NAMESPACE
+```
