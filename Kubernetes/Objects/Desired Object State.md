@@ -269,4 +269,23 @@ spec:
   schedulerName: SCHEDULER_NAME
 ```
 
+Pod Priority
+```YAML
+apiVersion:
+kind:
+metadata:
+  name: RESOURCE_NAME
+value: PRIORITY
+globalDefeault: # true or false
+description: "DESCRIPTION"
+```
+```YAML
+apiVersion: v1
+kind: Pod
+metadata:
+  name: RESOURCE_NAME
+spec:
+  priorityClassName: PRIORITY_CLASS_NAME
+```
+
 <br>
