@@ -1,0 +1,44 @@
+# Pod Overview
+
+# Pods Overview
+
+* The smallest object that can be created in Kubernetes
+* A single instance of an application
+* New pods are created when scaling up and existing pods are deleted when scaling down
+* Usually have a one-to-one relationship with containers but a single pod can have multiple containers except for the fact that there's usually not multiple containers of the same kind (*Helper container doing some support task for the application and that lives along side a container by maintaining a one-to-one relationship with their respective container*, *etc.*)
+* Containers within the same Pod can communicate with each other as local hosts since they share the same space (They can also share the same storage space)
+
+<br>
+
+```YAML
+apiVersion: v1
+kind: Pod
+metadata:
+  name: POD_NAME
+spec:
+  containers:
+    - name: CONTAINER_NAME
+      image: CONTAINER_IMAGE
+      volumeMounts:
+        - mountPath: MOUNT_PATH
+          name: VOLUME_NAME
+  volumes:
+    - name: VOLUME_NAME
+      persistentVolumeClaim:
+        claimName: EXISTING_PVC_NAME
+```
+
+<br>
+
+| Pod Container Concept | Description | Possible Options |
+| --- | --- | --- |
+| `name` | The name of the container | |
+| `image` | The container image to use | |
+| `volumeMounts` | | `mountPath: MOUNT_PATH` (The path inside the container where the volume will be mounted), `name` (Refers to the volume name) |
+
+<br>
+
+| Pod Volume Concept | Description | Possible Options |
+| --- | --- | --- |
+| `name` | The name used to link the volume to volumeMounts | |
+| `persistentVolumeClaim` | Indicates the volume is backed by a PVC | `claimName: EXISTING_PVC_NAME` (Kubernetes will bind this pod to the PV associated with this PVC) |
