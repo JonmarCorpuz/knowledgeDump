@@ -98,3 +98,10 @@ kubectl get events -o wide
 # View scheduler logs
 kubectl logs SCHEDULER_NAME --name-space=NAMESPACE
 ```
+
+<br>
+
+Launch a proxy locally on port 8001 and uses the credentials within your local kubeconfig file to access the cluster
+```Bash
+kubectl proxy
+```
