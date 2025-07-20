@@ -17,6 +17,8 @@ An `Endpoint` is a legacy Kubernetes object that represents the IP addresses and
 | Metadata Extensible | Limited | Rich |
 | Controller | `kube-controller-manager` | `endpoint-slice-controller` |
 
+<br>
+
 # EndpointSlice 
 
 `EndpointSlices` is a Kubernetes API object that stores a subset of endpoints for a service (Unlike the older Endpoint objects that stores all endpoints in a single object)

@@ -41,3 +41,20 @@ spec:
 | --- | --- | --- |
 | `name` | The name used to link the volume to volumeMounts | |
 | `persistentVolumeClaim` | Indicates the volume is backed by a PVC | `claimName: EXISTING_PVC_NAME` (Kubernetes will bind this pod to the PV associated with this PVC) |
+
+<br>
+
+# Static Pods
+
+* Created by the kubelet without intervention from the kube-apiserver
+* You can't create replica sets with static pods
+* Can be used to deploy the control plane components as pods on a node
+* Automatically restarted and updated by the kubelet
+* Ignored by the kube-scheduler
+
+<br>
+
+## Static Pods Manifests
+
+* Can be stored in any directory on the node (The location of the directory it's in is passed into the kubelet as an option while running the service)
+* Specified in kubelet.service
