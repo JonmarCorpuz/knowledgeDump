@@ -8,30 +8,6 @@
 
 # API Groups
 
-## /metrics
-
-<br>
-
-## /healthz
-
-<br>
-
-## /version
-
-<br>
-
-## /api
-
-
-
-<br>
-
-## /apis
-
-<br>
-
-## /logs
-
 ## Core 
 
 <br>
