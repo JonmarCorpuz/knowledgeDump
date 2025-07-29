@@ -25,6 +25,15 @@ spec:
     - name: VOLUME_NAME
       persistentVolumeClaim:
         claimName: EXISTING_PVC_NAME
+  [serviceAccountName: SERVICE_ACCOUNT_NAME]
+  [automountServiceAccountToken: TRUE_OR_FALSE]
+```
+
+<br>
+
+Describe a pod
+```Bash
+kubectl describe pod POD_NAME
 ```
 
 <br>

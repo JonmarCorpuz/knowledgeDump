@@ -1,7 +1,8 @@
 # Service Account Overview
 
-* A default service account is automatically created for each namespace within a cluster
+* A service account named default is automatically created for each namespace within a cluster (This default service account and its token are automatically mounted to that pod as a volume mount )
 * A service account automatically generates a token that's stored as a secrets object that's automatically linked to the service account
+* Can't be modified when being used by a Kubernetes resource
 
 <br>
 
