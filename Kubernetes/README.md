@@ -13,7 +13,7 @@
 | 10250 | kubelet |
 | 10257 | kube-controller-manager |
 | 10259 | kube-scheduler |
-
+push 
 <br>
 
 | Worker Node Port | Description |

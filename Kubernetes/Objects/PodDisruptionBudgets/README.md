@@ -1,5 +1,7 @@
 # PodDisruptionBudget Overview
 
+PDBs are policies that help users control how many replicas of a pod can be unavailable at the same time during voluntary disruptions
+
 <br>
 
 ```YAML
