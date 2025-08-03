@@ -1,6 +1,6 @@
 # PodDisruptionBudget Overview
 
-PDBs are policies that help users control how many replicas of a pod can be unavailable at the same time during voluntary disruptions
+PDBs are policies that help users control how many replicas of a pod can be unavailable at the same time during voluntary disruption
 
 <br>
 
@@ -15,3 +15,9 @@ spec:
     matchLabels:
       app: my-app
 ```
+
+<br>
+
+# Voluntary Disruptions
+
+A voluntary disruption is any disruption to a pod that's initiated intentionally by a user (*Manual pod deletions*, *etc.*) or cluster automation (*Cluster upgrades*, *Node drains*, *etc.*)
