@@ -8,7 +8,7 @@ PDBs are policies that help users control how many replicas of a pod can be unav
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
-  name: example-pdb
+  name: PDB_NAME
 spec:
   minAvailable: 2
   selector:
@@ -28,4 +28,4 @@ A voluntary disruption is any disruption to a pod that's initiated intentionally
 
 ## Involuntary Disruptions
 
-(*Harware failure*, *Accidental deletions*, *Kernel panic*, *Pod eviction*, *etc.*)
+(*Harware failure*, *Accidental deletions*, *Kernel panic*, *Pod eviction*, *etc.*)ush or
