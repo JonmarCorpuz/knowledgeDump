@@ -1,6 +1,6 @@
 # Artificial Intelligence Overview
 
-* Data driven
+* Data driven ("*Without data, you're just another person with an opinion*" - William Edwards Deming)
 
 <br>
 
