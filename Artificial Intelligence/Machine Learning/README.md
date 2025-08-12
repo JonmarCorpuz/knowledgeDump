@@ -7,6 +7,8 @@ The success of ML, DL, and LLMs is more due to
 
 <br>
 
+`Inputs * Weights + Bias = Prediction`
+
 # Floating Point Operations per Second (FLOPs)
 
 | | | | |
