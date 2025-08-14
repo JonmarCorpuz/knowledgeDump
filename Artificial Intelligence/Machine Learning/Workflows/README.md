@@ -19,7 +19,6 @@ Clearly identifying the problem to be solved and establish the project goals (*U
 5. Risk assessment
 6. Document the problem definition
 
-
 <br>
 
 ## 2. Data Collection and Preprocessing
