@@ -1,59 +1,32 @@
 # Data Store Overview
 
-* A single data store can contain only one type of data (*Website data*, *Structured data*, *Structured content*, *Unstructured data*, *Healthcare FHIR data*, *etc.*)
+* A single data store can contain only one type of data
+* Each data store has one or more data records (**Document**)
 
 <br>
 
-# Data Store Data Types
-
-## Website Data
-
-[Website Data](https://cloud.google.com/generative-ai-app-builder/docs/create-datastore-ingest#:~:text=type%20of%20data.-,Website%20data,-Structured%20data) uses data indexed from public websites
-
-* Users can provide URL patterns and enable search over the data crawled from the web pages that fit the pattern (*Text*, *Images tagged with metadata*, *etc.*)
-* Users can also provide URL patterns for portions of websites that they want to exclude from the data store (Excluded URLs take priority over included ones)
-
-### Basic Website Search
-
-* Provides search capabilities over the existing Google Search index for the included websites
-* Doesn't require domain verification
-
-### Advanced Website Indexing
-
-* Provides advanced search capabilities over an index
-* Requires Vertex AI Search data stores owners to verify the domains to which the included websites belong
-* Provides that capability to add structured data to the data store schema (A website can contain unstructured data but you can add structured data in the form of `meta` tags, PageMap attributes, and schema.org data to your web pagegs and then use this structured data to edit the data store schemas )
+| Data Store Data Type | Description |
+| --- | --- |
+| [Website Data](https://cloud.google.com/generative-ai-app-builder/docs/create-datastore-ingest#:~:text=type%20of%20data.-,Website%20data,-Structured%20data) uses data indexed from public websites | |
+| [Structured Data](https://cloud.google.com/generative-ai-app-builder/docs/create-datastore-ingest#structured-data) | |
+| [Structured Content](https://cloud.google.com/generative-ai-app-builder/docs/create-datastore-ingest#structured-data-media) | |
+| [Unstructured Data](https://cloud.google.com/generative-ai-app-builder/docs/create-datastore-ingest#:~:text=Structured%20content%20(media)-,Unstructured%20data,-Healthcare%20FHIR%20data) | |
+| [Healthcare FHIR Data](https://cloud.google.com/generative-ai-app-builder/docs/create-datastore-ingest#:~:text=Unstructured%20data-,Healthcare%20FHIR%20data,-Website%20data) | |
 
 <br>
 
-## Structured Data
+# Data Store Components
 
-[Structured Data](https://cloud.google.com/generative-ai-app-builder/docs/create-datastore-ingest#structured-data)
+## Documents
 
-* Enables semantic search or recommendations over structured data
-* This type of data can be imported from BigQuery or Cloud Storage (Structured JSON data can also be manually uploaded through the API)
+A document is a data record that's stored in a data store
 
-<br>
+* Each data stores has one or more 
 
-## Structured Content
-
-[Structured Content](https://cloud.google.com/generative-ai-app-builder/docs/create-datastore-ingest#structured-data-media)
-
-* Can only be connected to media apps and vice-versa
-
-<br>
-
-## Unstructured Data
-
-[Unstructured Data](https://cloud.google.com/generative-ai-app-builder/docs/create-datastore-ingest#:~:text=Structured%20content%20(media)-,Unstructured%20data,-Healthcare%20FHIR%20data)
-
-* Enables semantic search over data (*Documents*, *Images*, *etc.*)
-* Supports various document types (*HTML*, *PDF with embedded text*, *TXT*, *PPTX*, *DOCX*, *etc.*)
-
-<br>
-
-## Healthcare FHIR Data
-
-[Healthcare FHIR Data](https://cloud.google.com/generative-ai-app-builder/docs/create-datastore-ingest#:~:text=Unstructured%20data-,Healthcare%20FHIR%20data,-Website%20data) 
-
-* Healthcare search apps use GHIR R4 data imported from a Cloud Healthcare API FHIR store
+| Data Store Data Type | Document |
+| --- | --- |
+| Website Data | Web page |
+| Structured Data | A row in a table or a JSON record that follows a particular schema |
+| Structured Media | A row in a table or a JSON record that follows a schema that is specific to media |
+| Unstructured Data | A file in HTML, a PDF with embedded text, or a file in TXT format |
+| Healthcare FHIR Data | A supported FHIR R4 resource |
