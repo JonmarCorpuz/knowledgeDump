@@ -1,5 +1,7 @@
 # Artificial Intelligence Overview
 
+[AI](https://cloud.google.com/learn/what-is-artificial-intelligence?hl=en) is a set of technologies that enable computers to perform a variety of advanced functions (*See*, *Understand spoken and written language*, *Analyze data*, *etc.*)
+
 * Data driven ("*Without data, you're just another person with an opinion*" - William Edwards Deming)
 * Data always comes in raw and cleaning that data allows you to learn more about the data itself
 
