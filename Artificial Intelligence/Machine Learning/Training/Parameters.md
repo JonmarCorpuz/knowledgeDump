@@ -1,25 +1,9 @@
-# Parameter Overview
+# Model Parameter Overview
+
+A model [parameter](https://www.geeksforgeeks.org/machine-learning/difference-between-model-parameters-vs-hyperparameters/) is a variable of the selected model which can be estimated by fitting the given data to the model
 
 <br>
 
 # Stochastic Gradient Descent (SGD)
 
 <br>
-
-# Hyperparameters
-
-* Parameters that can be adjusted at the time of training (*Learning rate*, *Batch size*, *EPOCH*, *Regularization and regularization rate*, *Optimizer*, *etc.*)
-
-<br>
-
-## Batch Size
-
-* The total number of example to calculate Gradient in single iterations
-
-<br>
-
-### Mini-Batch SGD
-
-## EPOD
-
-* The full training pass over the entire training set
