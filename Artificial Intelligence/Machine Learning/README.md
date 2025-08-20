@@ -6,6 +6,13 @@
 
 <br>
 
+Machine learning process
+```Text
+Problem Definition --> Data Identification (Feature Engineering) --> Data Preparation (Feature Engineering) --> Define Model --> Hyperparameter --> Train and Evaluate --> Save and Deploy for Serving --> Serving (Prediction)
+```
+
+<br>
+
 The success of ML, DL, and LLMs is more due to 
 * Availability of data (Big data)
 * Availability of more powerful computational engines (*GPUs*, *TPUs*, *NPUs*, *etc.*)
