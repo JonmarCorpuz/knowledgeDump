@@ -1,6 +1,6 @@
 # Classification Overview
 
-* Used to predict categorixal values (*Male or female*, *etc.*)
+* Used to predict categorical values (*Male or female*, *etc.*)
 
 <br>
 
