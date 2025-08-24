@@ -1,4 +1,9 @@
-# Objective/Cost/Loss Function Overview
+# Loss Function Overview
+
+A loss function is a mathematical function used to measure how well a machine learning model's predictions align with the actual target values in a dataset
+
+* Quantifies the difference or error between the predicted output of the model and the true values by providing a numeric representation of the model's performance
+* Aims to help minimize the difference betweenthe predicted output and the current output
 
 <br>
 
