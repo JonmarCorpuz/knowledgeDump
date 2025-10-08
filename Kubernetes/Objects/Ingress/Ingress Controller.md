@@ -8,6 +8,15 @@ An Ingress Controller is the implementation of an Ingress that manages the incom
 
 <br>
 
+# Ingress Controller Solutions
+
+| Ingress Controller Solution | Description |
+| --- | --- |
+| tmp | tmp |
+
+
+<br>
+
 ```YAML
 apiVersion: apps/v1
 kind: Deployment
