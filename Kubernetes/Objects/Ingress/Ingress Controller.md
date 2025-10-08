@@ -2,6 +2,35 @@
 
 An Ingress Controller is the implementation of an Ingress that manages the incoming HTTP and HTTPS traffic from outside the cluster and routes it to the appropriate services inside the cluster
 
-* A cluster requires at least one ingress controller running in order for ingress to work
+* Requires at least one ingress controller running in order for ingress to work
 * Not started automatically within a cluster (It needs to be implemented and deployed by the user)
 * Responsible for fulfilling the ingress (Usually with a load balancer although it can also configure the user's edge router or additional frontends to help handle the traffic)
+
+<br>
+
+```YAML
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ingress-nginx-controller
+  namespace: ingress-nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: ingress-nginx
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: ingress-nginx
+    spec:
+      containers:
+      - name: controller
+        image: ingress-nginx/controller:latest
+        args:
+        - /nginx-ingress-controller
+        - --configmap=$(POD_NAMESPACE)/ingress-nginx-controller
+        ports:
+        - containerPort: 80
+        - containerPort: 443
+```
