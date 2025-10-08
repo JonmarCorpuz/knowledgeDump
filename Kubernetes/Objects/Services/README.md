@@ -1,12 +1,20 @@
 # Kubernetes Services Overview
 
-A service is a Kubernetes object 
+A service is an API object that provides a stable endpoint to access a set of Pods 
 
 * Enables the communication between various components inside and outside the application
 * Helps connect applications together with other applications or users
 * Enables loose coupling between microservices in an application
 
 <br>
+
+# Kubernetes Service Types
+
+| Service | Description |
+| --- | --- |
+| `NodePort` | |
+| `ClusterIP` | |
+| `LoadBalancer` | |
 
 # NodePort
 
