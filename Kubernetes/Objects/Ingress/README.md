@@ -27,3 +27,8 @@ spec:
             port:
               number: 80
 ```
+
+<br>
+
+* Think of Ingress as a Layer 7 Load Balancer configured and managed within the cluster
+* You still need to expose Ingress to the outside (NodePort, ClusterIP, LoadBalancer)
