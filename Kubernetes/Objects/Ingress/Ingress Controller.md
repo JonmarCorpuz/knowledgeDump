@@ -43,3 +43,9 @@ spec:
         - containerPort: 80
         - containerPort: 443
 ```
+
+<br>
+
+Exampl: nginx
+* Requires a ConfigMap to feed nginx configuration data
+* Requires a ServiceAccount with the right permissions to access the necessary objects
