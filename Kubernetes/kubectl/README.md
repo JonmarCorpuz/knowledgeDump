@@ -1,6 +1,12 @@
 # kubectl Overview
 
 ```Bash
+kubectl explain {RESOURCE}[.FIELD] [--recursive]
+```
+
+<br>
+
+```Bash
 #
 kubectl replace [--force] -f FILENAME.yaml
 
