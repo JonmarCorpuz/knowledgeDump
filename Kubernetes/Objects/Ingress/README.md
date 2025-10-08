@@ -19,11 +19,18 @@ spec:
   - host: example.com
     http:
       paths:
-      - path: /testpath
+      - path: /testpath1
         pathType: Prefix
         backend:
           service:
-            name: test
+            name: test1
+            port:
+              number: 80
+      - path: /testpath2
+        pathType: Prefix
+        backend:
+          service:
+            name: test2
             port:
               number: 80
 ```
@@ -32,3 +39,4 @@ spec:
 
 * Think of Ingress as a Layer 7 Load Balancer configured and managed within the cluster
 * You still need to expose Ingress to the outside (NodePort, ClusterIP, LoadBalancer)
+* You defined rules when you want to route traffic based on different conditions
