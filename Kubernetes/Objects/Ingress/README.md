@@ -40,3 +40,4 @@ spec:
 * Think of Ingress as a Layer 7 Load Balancer configured and managed within the cluster
 * You still need to expose Ingress to the outside (NodePort, ClusterIP, LoadBalancer)
 * You defined rules when you want to route traffic based on different conditions
+* Remember to configure and deploy the default backend
