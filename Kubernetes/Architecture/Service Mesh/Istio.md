@@ -19,9 +19,29 @@ Istio is an open-source service mesh platform that enhances Kubernetes without r
 
 <br>
 
+# Istio Components
+
+| Istio Component | Purpose |
+| --- | --- |
+| istio-ingressgateway | |
+| istiod | |
+| istio-egressgateway | |
+
+<br>
+
 # Installing Istio
 
 ## Istioctl
+
+```Bash
+istioctl install --set profile=PROFILE -y
+
+istioctl verify-install
+```
+
+| Istioctl Profile | Description |
+| --- | --- |
+| demo | |
 
 <br>
 
