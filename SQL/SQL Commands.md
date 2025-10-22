@@ -1,11 +1,11 @@
 # Query Information
 
-tmp
+Return the current user account that's connected to the database server
 ```SQL
 SHOW user;
 ```
 
-tmp
+Display the structure (schema) of a table
 ```SQL
 DESCRIBE table_name;
 ```
@@ -19,14 +19,14 @@ SELECT tname FROM tab;
 
 # Connect to Database
 
-tmp
+Connect as a normal user to the database
 ```SQL
-conn username/password@localhost:1521/XEPDB1;
+conn username/password@localhost:1521/database_name;
 ```
 
-tmp
+Connect as a database administrator with full system privileges to the database
 ```SQL
-conn username/password@localhost:1521/XEPDB1 as sysdba;
+conn username/password@localhost:1521/database_name as sysdba;
 ```
 
 <br>
@@ -99,6 +99,20 @@ GRANT dba, connect, resource TO username;
 Show database name, open mode, and database status blocks
 ```SQL
 SELECT name, open_mode, dsb FROM v$database;
+```
+
+<br>
+
+## Connect to Database
+
+Connect as a normal user to 
+```SQL
+conn username/password@localhost:1521/XEPDB1;
+```
+
+Connect as a database administrator with full system privileges
+```SQL
+conn username/password@localhost:1521/XEPDB1 as sysdba;
 ```
 
 <br>
