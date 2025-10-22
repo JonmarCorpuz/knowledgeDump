@@ -115,6 +115,22 @@ Connect as a database administrator with full system privileges
 conn username/password@localhost:1521/XEPDB1 as sysdba;
 ```
 
+Add primary key to column
+```SQL
+CREATE TABLE table_name (
+  column_name data_type [constraint],
+  PRIMARY KEY (column_name)
+);
+```
+
+Add a foreign key to table
+```SQL
+CREATE TABLE table_name (
+  column_name data_type [constraint],
+  FOREIGN KEY (column_name) REFERENCE foreign_table_name(foreign_column_name)
+);
+```
+
 <br>
 
 ## Modify Databases
