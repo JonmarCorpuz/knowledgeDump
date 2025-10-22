@@ -28,5 +28,5 @@ Constraints in SQL are rules applied to columns or tables to enforce the accurac
 
 | Constraint Type | Description |
 | --- | --- |
-| `PRIMARY KEY` | |
-| `FOREIGN KEY (column_name) REFERENCES table_name(column_name)` | |
+| `PRIMARY KEY` | Uniquely identifies each record in a table (A table can have only one primary key that can consist of one or more columns |
+| `FOREIGN KEY (column_name) REFERENCES table_name(column_name)` | Establishes a relationship between two tables |
