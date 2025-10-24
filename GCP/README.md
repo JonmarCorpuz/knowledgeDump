@@ -2,11 +2,14 @@
 
 <br>
 
-# GCP Access Methods
+# Storage
 
-| GCP Access Method | Description |
-| --- | --- |
-| Cloud Console | A simple web-based GUI |
-| Cloud SDK | A set of tools to manage resources and applications hosted on GCP (*gcloud*, *bq*) |
-| APIs |  |
-| GCP App | |
+```Text
+Data Storage
+|--> Unstructured --> Cloud Storage
+|--> Structured |---> Type 1: Transactional Workloads |---> SQL -----> Cloud SQL
+                |                                     |---> NoSQL ---> Firestore
+                |
+                |---> Type 2: Analytical Worklaods |------> SQL -----> BigQuery
+                                                   |------> NoSQL ---> BigTable
+```
