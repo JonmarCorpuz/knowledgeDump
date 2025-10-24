@@ -1,1 +1,0 @@
-# Vertex ML Metadata

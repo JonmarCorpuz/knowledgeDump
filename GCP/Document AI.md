@@ -22,7 +22,7 @@
 
 ## General
 
-* OCR, FOrm Parser, Layout
+* OCR, Form Parser, Layout
 
 <br>
 

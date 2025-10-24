@@ -65,3 +65,8 @@ Collecting, generating, cleaning, pre- and post-processing, and picking datasets
 
 Cleaning raw data (*If you give me enough parameters, I can always fit the data*)
 * Create a training set, then convert that into a validation set (To avoid over-fitting in order to avoid forcing your AI model to that data), and then convert that into a test set
+
+<br>
+
+
+```

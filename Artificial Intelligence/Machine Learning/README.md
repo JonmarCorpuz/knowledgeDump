@@ -31,3 +31,45 @@ The success of ML, DL, and LLMs is more due to
 | 1994 | Machine translation | teraFLOPs | |
 | 2020 | Language understanding | yottaFLOPs | |
 | 2025 | xxxGPT | quettaFLOPs | |
+
+<br>
+
+# Types of Machine Learning
+
+```Text
+Machine Learning
+|---> Supervised |------> Classification
+|                |------> Regression
+|
+|---> Unsupervised |----> Clustering
+|
+|---> Deep Learning |---> Generative AI
+```
+
+## Supervised 
+
+* Deals with labeled data
+* Task driven
+
+<br>
+
+| Supervised Learning Type | Description | ML Model | Example |
+| --- | --- | --- | --- |
+| Classification | Predicts a categorical variable | Logistic regression | *Determining whether a picture shows a cat or a dog* |
+| Regression | Predicts a numeric variable | Linear regression | *Forecasting sales for a product based on its past sales* |
+
+<br>
+
+## Unsupervised
+
+* Deals with unlabeled data
+* Data-driven 
+* Identifies a pattern
+
+<br>
+
+| Unsupervised Learning Type | Description | Learning Model/Technique | Example |
+| --- | --- | --- | --- |
+| Clustering | Groups data points together | k-means clustering | *Using customer demographics to determine customer segmentation* |
+| Association | Identifies underlying relationships | Association rule learning | *Correlating two products to place them closer in a grocery store* |
+| Dimensionality Reduction | Reduces the number of dimensions | Principal component analysis | *Combining characteristics to create a simplified rule for an insurance quote* |
