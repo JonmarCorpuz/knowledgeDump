@@ -47,3 +47,6 @@ Data-to-AI workflow
 
 4. Training |----> Vertex AI 
 ```
+
+<br>
+
