@@ -4,6 +4,8 @@ A PSC endpoint is an internal IP address within a consumer VPC network that conn
 
 * Acts as a bridge that lets worklaods in your VPC securely access published services without using the public Internet
 * Enables private access between separate networks 
+* Uses a single internal IP address to provide connectivity to the producer VPC
+* Can be used to generate one or more APIs as long as the DNS is configured to do so
 
 <br>
 
