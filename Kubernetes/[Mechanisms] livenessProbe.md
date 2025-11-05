@@ -12,9 +12,11 @@ A liveness probe is a mechanism used to check whether a container inside a pod i
 
 ## HTTP Liveness Probe
 
-An HTTP liveness probe makes an **HTTP GET** request to the specified endpoint on the container 
+An **HTTP** liveness probe makes an **HTTP GET** request to the specified endpoint on the container 
 
 * The container is marked as healthy if it returns a 2xx or 3xx response
+
+<br>
 
 An HTTP liveness probe is defined in the `spec` section of a pod's YAML definition file and deployed using `kubectl`
 
@@ -38,11 +40,13 @@ kubectl apply -f FILENAME.yaml
 
 ## TCP Socket Liveness Probe
 
-A TCP socket liveness probe tries to open a TCP connection on the specified port
+A **TCP socket** liveness probe tries to open a **TCP connection** on the specified port
 
 * The container is marked as healthy if the connection succeeds
 
-An HTTP liveness probe is defined in the `spec` section of a pod's YAML definition file and deployed using `kubectl`
+<br>
+
+A TCP socket liveness probe is defined in the `spec` section of a pod's YAML definition file and deployed using `kubectl`
 
 ```YAML
 spec:
@@ -63,10 +67,13 @@ kubectl apply -f FILENAME.yaml
 
 ## Exec Liveness Probe
 
-An exec liveness probe tries to run a command inside the container 
+An **exec** liveness probe tries to run a **command** inside the container 
 
 * The container is marked as healthy if the command exits with a code **0**
 
+<br>
+
+An exec liveness probe is defined in the `spec` section of a pod's YAML definition file and deployed using `kubectl`
 ```YAML
 spec:
   containers:
