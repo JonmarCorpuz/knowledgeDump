@@ -1,6 +1,6 @@
 # Liveness Probe Overview
 
-A liveness probe is a mechanism used to check whether a container inside a pod is still running and healthy
+A **livenessProbe** is a mechanism used to check whether a container inside a pod is **still running and healthy**
 
 * If it fails repeatedly then kubernetes will kill the container and follow the pod's restart policy to bring it back up
 
