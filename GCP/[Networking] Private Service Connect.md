@@ -4,6 +4,8 @@
 
 * Ensures all traffic remains on Google's private network backbone
 
+![](https://github.com/JonmarCorpuz/publicDiagrams/blob/main/psc-overview.png)
+
 <br>
 
 # Private Service Connect Components
@@ -79,6 +81,7 @@ gcloud compute forwarding-rules create ENDPOINT_NAME \
 
 
 ## Interfaces
+
 
 
 
