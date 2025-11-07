@@ -8,26 +8,22 @@
 
 <br>
 
-# Private Service Connect Components
-
-## Service Attachments
+# Private Service Connect Methods
 
 A PSC **service attachment** is a resource that a service producer uses to **expose their service privately**
 
 * Acts as an access point allowing consumers in different VPC networks to connect securely to the service
 * Can be seen as a load balancer fronting the service
 
-## Endpoint
+## Private Endpoints
 
 A PSC **endpoint** is the consumer-side resource that connects to a service attachment on the producer side or Google APIs
 
-<br>
-
-# Private Service Connect Methods
-
-## Private Endpoints
-
 ### Producer Project
+
+A producer project is the project that owns and hosts the service being made available via PSC with the help of service attachment
+
+* A **service attachment** is a resource that a service producer uses to **expose their service privately** by acting as a load balancer that consumer VPCs can securely connect to
 
 ![](https://github.com/JonmarCorpuz/publicDiagrams/blob/main/psc-endpoint1.png)
 
