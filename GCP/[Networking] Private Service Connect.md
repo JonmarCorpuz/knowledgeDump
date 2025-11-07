@@ -14,6 +14,7 @@
 
 ## Private Endpoints
 
+### Producer Project
 
 ![](https://github.com/JonmarCorpuz/publicDiagrams/blob/main/psc-endpoint1.png)
 
@@ -35,6 +36,8 @@ gcloud compute forwarding-rule create ENDPOINT_NAME \
 ```
 
 <br>
+
+### Google APIs
 
 ![](https://github.com/JonmarCorpuz/publicDiagrams/blob/main/psc-endpoint2.png)
 
@@ -72,4 +75,5 @@ gcloud compute forwarding-rules create ENDPOINT_NAME \
 
 
 ## Interfaces
+
 
