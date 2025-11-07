@@ -12,7 +12,14 @@
 
 ## Service Attachments
 
+A PSC **service attachment** is a resource that a service producer uses to **expose their service privately**
+
+* Acts as an access point allowing consumers in different VPC networks to connect securely to the service
+* Can be seen as a load balancer fronting the service
+
 ## Endpoint
+
+A PSC **endpoint** is the consumer-side resource that connects to a service attachment on the producer side or Google APIs
 
 <br>
 
@@ -81,6 +88,7 @@ gcloud compute forwarding-rules create ENDPOINT_NAME \
 
 
 ## Interfaces
+
 
 
 
