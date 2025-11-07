@@ -2,6 +2,14 @@
 
 <br>
 
+# Private Service Connect Components
+
+## Service Attachments
+
+## Endpoint
+
+<br>
+
 # Private Service Connect Methods
 
 ## Private Endpoints
@@ -64,3 +72,4 @@ gcloud compute forwarding-rules create ENDPOINT_NAME \
 
 
 ## Interfaces
+
