@@ -1,1 +1,0 @@
-# Swap File Overview
