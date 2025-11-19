@@ -1,3 +1,0 @@
-# SQL Overview
-
-<br>

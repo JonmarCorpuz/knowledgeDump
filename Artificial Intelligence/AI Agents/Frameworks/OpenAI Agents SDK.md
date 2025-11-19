@@ -1,1 +1,0 @@
-# OpenAPI Agents SDK Overview
