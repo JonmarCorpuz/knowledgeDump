@@ -1,2 +1,0 @@
-# Sysdig Kubernetes Monitoring Overview
-
